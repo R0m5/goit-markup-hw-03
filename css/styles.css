@@ -25,6 +25,16 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.44;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /*
 .box {
   /* border: 5px solid teal;
@@ -73,6 +83,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid teal;
 }
 
 /*Header*/
@@ -149,6 +160,8 @@ body {
 .hero {
   background-color: var(--background-color);
   color: var(--primary-text-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 /*Section*/
 
@@ -160,6 +173,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .section-title {
   color: var(--primary-text-color);
@@ -174,6 +192,8 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 188px;
 }
 .section-hryak {
   color: var(--primary-text-color);
@@ -246,6 +266,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .title2 {
   color: var(--primary-text-color);
@@ -253,6 +274,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
 }
 /*Footer*/
 .logo-footer {
@@ -298,3 +320,6 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
+.footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
