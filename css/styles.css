@@ -11,6 +11,9 @@
   --logo-color: #000000;
   --button-border-portfolio: #eeeeee;
   --button-portfolio-bckgrn: #ffffff;
+  --box-shadow-people: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --border-radius-people: 0px 0px 4px 4px;
 }
 html {
   box-sizing: border-box;
@@ -27,6 +30,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.44;
 }
+/*
 h1,
 h2,
 h3,
@@ -37,7 +41,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-/*
 .box {
   /* border: 5px solid teal;
   padding: 20px;
@@ -198,13 +201,13 @@ p {
   margin-top: 0;
   margin-bottom: 30px;
 }
-/*Section*/
 .hero {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 /*Section*/
 
 .features-list .title {
@@ -216,8 +219,30 @@ p {
 }
 .features-list .item {
   width: 270px;
-  background-color: darkblue;
+  margin-right: 30px;
+  margin-top: 94px;
 }
+.features-list .item:last-child {
+  margin-right: 0px;
+}
+/*
+.people {
+  background: var(--background-color3);
+  display: flex;
+  flex-wrap: wrap;
+}
+.people .item {
+  width: 270px;
+  background-color: var(--accent-color);
+  margin-bottom: 94px;
+  box-shadow: var(--box-shadow-people);
+  border-radius: var(--border-radius-people);
+  margin-right: 30px;
+}
+.people .item:last-child {
+  margin-right:0px;
+}*/
+
 .paragraph {
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -243,7 +268,7 @@ p {
   line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 188px;
+  margin-top: 94px;
 }
 .section-hryak {
   color: var(--primary-text-color);
@@ -284,6 +309,19 @@ p {
   border-radius: 4px;
   text-decoration: none;
   border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+.item .button2:not(last-child) {
+  margin-right: 8px;
+}
+.knopka {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  justify-content: center;
 }
 .button2:hover,
 .button2:focus {
@@ -311,6 +349,31 @@ p {
 }
 .people {
   background: var(--background-color3);
+  display: flex;
+  flex-wrap: wrap;
+}
+.people .item {
+  width: 270px;
+  background-color: var(--accent-color);
+  margin-bottom: 94px;
+  box-shadow: var(--box-shadow-people);
+  border-radius: var(--border-radius-people);
+  margin-right: 30px;
+}
+.people .item:last-child {
+  margin-right: 0px;
+}
+.devices {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.devices .item {
+  margin-right: 30px;
+}
+.devices .item:last-child {
+  margin-right: 0px;
 }
 .title {
   font-weight: 700;
@@ -398,4 +461,9 @@ p {
   width: 370px;
   background-color: var(--button-portfolio-bckgrn);
   border: 1px solid var(--button-border-portfolio);
+  margin-bottom: 94 px;
+}
+.item-list {
+  padding-left: 24px;
+  padding-right: 24px;
 }
