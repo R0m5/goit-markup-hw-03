@@ -42,6 +42,11 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+img {
+  height: auto;
+  vertical-align: top;
+}
 /*
 .box {
   /* border: 5px solid teal;
@@ -174,6 +179,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
 }
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
@@ -204,11 +210,6 @@ p {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.hero {
-  display: block;
-  background-color: var(--background-color);
-  color: var(--primary-text-color);
-}
 
 /*Section*/
 
@@ -216,7 +217,12 @@ p {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
+.hero {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
 .features-list .title {
   color: var(--primary-text-color);
 }
@@ -255,9 +261,9 @@ p {
   font-size: 14px;
   line-height: 1.71;
 }
-.section .no-padding {
-  padding-top: 0;
-  padding-bottom: 94px;
+.no-padding {
+  padding-top: 94px;
+  padding-bottom: 0px;
 }
 .section-title {
   color: var(--primary-text-color);
@@ -316,17 +322,20 @@ p {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-right: 8px;
 }
-.item .button2:not(last-child) {
+/* .item .button2:not(last-child) {
   margin-right: 8px;
-}
+ }
+  */
+
 .knopka {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  margin-top: 94px;
   justify-content: center;
+}
+.knopka .item:not(:nth-child(5n)) {
+  margin-right: 8px;
 }
 .button2:hover,
 .button2:focus {
@@ -351,6 +360,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
 }
 .people {
   background: var(--background-color3);
@@ -464,8 +474,11 @@ p {
   width: 370px;
   background-color: var(--button-portfolio-bckgrn);
   border: 1px solid var(--button-border-portfolio);
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .item-list {
   padding: 30px 32px;
+}
+.item-list2 {
+  padding: 20px 24px;
 }
