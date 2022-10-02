@@ -111,9 +111,13 @@ img {
   background-color: var(--accent-color);
   border-bottom: 1px solid #ececec;
 }
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
   color: var(--navigation-color);
+} */
+.logo:hover,
+.logo:focus {
+  text-decoration: underline var(--navigation-color);
 }
 .logotype {
   color: var(--navigation-color);
@@ -424,8 +428,9 @@ img {
 }
 .logo-footer:hover,
 .logo-footer:focus {
-  color: var(--navigation-color);
+  text-decoration: underline var(--navigation-color);
 }
+
 .footer {
   background-color: var(--background-color);
 }
