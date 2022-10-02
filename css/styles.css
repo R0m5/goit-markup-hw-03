@@ -109,6 +109,7 @@ img {
 }
 .header {
   background-color: var(--accent-color);
+  border-bottom: 1px solid #ececec;
 }
 .logo:hover,
 .logo:focus {
@@ -127,10 +128,10 @@ img {
   align-items: center;
 }
 
-.strip {
+/* .strip {
   width: 1200;
   border: 1px solid #ececec;
-}
+} */
 
 /*Site nav*/
 
@@ -202,6 +203,8 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 
 /*Section*/
@@ -215,6 +218,18 @@ img {
   color: var(--primary-text-color);
   padding-bottom: 200px;
   padding-top: 200px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .features-list .title {
   color: var(--primary-text-color);
@@ -260,6 +275,7 @@ img {
 }
 .section-title {
   color: var(--primary-text-color);
+  background-color: red;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -296,8 +312,8 @@ img {
   padding: 10px 32px;
   min-width: 216px;
   border: 0;
-  /* cursor: pointer;
-  display: inline-block; */
+  cursor: pointer;
+  /* display: inline-block; */
 }
 .button-hero:active {
   background-color: var(--primary-white-color);
@@ -315,6 +331,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .knopka {
@@ -369,7 +386,7 @@ img {
 .devices {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .devices .item {
   margin-right: 30px;
@@ -395,7 +412,6 @@ img {
 .logo-footer {
   color: var(--accent-color);
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -463,14 +479,17 @@ img {
   gap: 30px;
 }
 .poster .item {
-  width: 370px;
+  /* width: 370px; */
+  flex-basis: calc ((100%-60px) / 3);
   background-color: var(--button-portfolio-bckgrn);
-  border: 1px solid var(--button-border-portfolio);
-  /* margin-bottom: 94px; */
+  /* border: 1px solid var(--button-border-portfolio);
+  margin-bottom: 94px; */
 }
 .item-list {
-  padding: 30px 32px;
+  padding: 30px 0px;
 }
 .item-list2 {
   padding: 20px 24px;
+  border: 1px solid transparent;
+  border-top: none;
 }
